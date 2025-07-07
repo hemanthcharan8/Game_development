@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyeoh6e0hbff2"]
+
+[ext_resource type="Texture2D" uid="uid://bgmepagkpm36v" path="res://assets/craftpix-net-753737-free-green-zone-tileset-pixel-art/2 Background/Day/Background.png" id="1_bhdd1"]
+[ext_resource type="PackedScene" uid="uid://8k4qh7w5euis" path="res://Scenes/start_button.tscn" id="2_hnl2t"]
+[ext_resource type="PackedScene" uid="uid://70af5f8udmkd" path="res://Scenes/quit_button.tscn" id="3_565x3"]
+
+[node name="intro_gui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 6373.0
+offset_bottom = 4123.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(578.5, 327)
+scale = Vector2(1.99826, 1.99383)
+texture = ExtResource("1_bhdd1")
+
+[node name="Start Button" parent="." instance=ExtResource("2_hnl2t")]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 283.0
+offset_right = 433.0
+offset_bottom = 419.0
+
+[node name="quit_button" parent="." instance=ExtResource("3_565x3")]
+layout_mode = 0
+offset_left = 678.0
+offset_top = 285.0
+offset_right = 921.0
+offset_bottom = 412.0

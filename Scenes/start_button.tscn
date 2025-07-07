@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://8k4qh7w5euis"]
+
+[ext_resource type="Script" path="res://Scripts/start_button.gd" id="1_bli4q"]
+
+[node name="Start Button" type="Button"]
+offset_right = 110.0
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 50
+text = "Start"
+script = ExtResource("1_bli4q")
+
+[connection signal="pressed" from="." to="." method="_on_StartButton_pressed"]
